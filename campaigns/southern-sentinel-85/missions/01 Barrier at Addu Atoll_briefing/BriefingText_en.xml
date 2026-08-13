@@ -1,0 +1,61 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="JOINT MARITIME HQ" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+  <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDING OFFICER, {TaskForceName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="DIEGO GARCIA / INDIAN OCEAN COMMAND" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATION SOUTHERN SENTINEL" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="28 JUN 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	A Soviet surface raider detachment is entering the central Indian Ocean under cover of long-range maritime reconnaissance. A replenishment ship or auxiliary is assessed to be supporting the group. The force is moving toward the coalition sea lanes south of the Maldives and must be stopped before it can establish a sustained threat.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Locate and destroy the Soviet raider group.
+	<LineBreak />2.2 Destroy the Soviet support tanker or auxiliary.
+	<LineBreak />2.3 {TaskForceFlagshipName} must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Sortie from the Addu Atoll and Diego Garcia axis and establish the marked barrier patrol area.
+	<LineBreak />3.2 Use your assigned Task Force P-3C detachment to extend search coverage and classify contacts before committing the surface force.
+	<LineBreak />3.3 Engage the raider group at range where possible, then prosecute the support element if the tactical picture permits.
+	<LineBreak />3.4 Keep the task force between the enemy and the coalition shipping route. Do not sacrifice the flagship for a single contact.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 The raider group includes missile-armed surface combatants and a support tanker or auxiliary.
+	<LineBreak />4.2 Soviet Il-38 and Tu-95RT reconnaissance aircraft may cue the group or shadow the task force.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 {TaskForceName} is the principal coalition surface force assigned to the barrier operation.
+	<LineBreak />5.2 P-3C maritime patrol support is available from the Diego Garcia axis.
+	<LineBreak />5.3 Coalition merchant traffic remains at risk south of the Maldives until the raider force is neutralized.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 The support ship is likely to remain close enough to the raiders to provide fuel and ammunition but may lag during an engagement.
+	<LineBreak />6.2 Open-ocean visibility favors long-range search and missile employment, while local squalls may briefly mask contacts.
+	<LineBreak />6.3 Destroy the combat group first if required, but continue the search for the support vessel before departing the operating area.
+  </TextBlock>
+</Grid>

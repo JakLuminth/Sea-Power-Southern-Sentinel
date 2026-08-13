@@ -1,0 +1,61 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="JOINT MARITIME HQ" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+  <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDING OFFICER, {TaskForceName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="DARWIN / WESTERN AUSTRALIA" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATION LIFELINE SOUTH" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="14 JUL 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	Coalition auxiliaries and merchant shipping are withdrawing toward northwest Australia under emergency routing. Enemy pressure is building east of Lombok, and scattered Soviet raiders are probing the withdrawal route. Submarine or air shadowing is assessed likely as the convoy clears the Timor Sea approaches.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Defend the convoy.
+	<LineBreak />2.2 Destroy the enemy raiders.
+	<LineBreak />2.3 {TaskForceFlagshipName} must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Establish a protective screen around the withdrawing auxiliaries and merchant ships.
+	<LineBreak />3.2 Maintain continuous route surveillance by assigning your Task Force reconnaissance aircraft alongside surface, helicopter, and sonar coverage.
+	<LineBreak />3.3 Engage enemy raiders before they can close with the convoy. Do not allow the screen to become separated from the protected shipping.
+	<LineBreak />3.4 Recover the convoy in the northwest Australia exit area and rejoin the main effort.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 Soviet surface raiders are operating along the approach to the convoy route.
+	<LineBreak />4.2 Additional submarine or maritime air reconnaissance may be present.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 {TaskForceName} is assigned as the convoy escort and naval combat force.
+	<LineBreak />5.2 Coalition auxiliaries and merchant ships are the protected force.
+	<LineBreak />5.3 Darwin remains the destination and recovery area.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 The enemy is expected to exploit the convoy's reduced speed and predictable route.
+	<LineBreak />6.2 Favorable dry-season conditions will increase detection ranges for both convoy escorts and hostile reconnaissance.
+	<LineBreak />6.3 Preserve combat power for follow-on operations. The convoy's safe arrival is the primary mission objective.
+  </TextBlock>
+</Grid>

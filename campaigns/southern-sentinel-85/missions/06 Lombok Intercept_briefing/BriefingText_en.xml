@@ -1,0 +1,62 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="JOINT MARITIME HQ" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+  <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDING OFFICER, {TaskForceName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="DARWIN / EASTERN COMMAND" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATION LOMBOK INTERCEPT" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="12 JUL 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	A reinforced Soviet surface group is attempting to break eastward through Lombok Strait toward the open convoy lanes south and east of the archipelago. The group must be stopped inside the strait before it can disperse into open water. Radio and acoustic reporting also indicate a Kilo class submarine north of the narrows.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Destroy the Soviet breakout group.
+	<LineBreak />2.2 Destroy any enemy submarine encountered.
+	<LineBreak />2.3 {TaskForceFlagshipName} must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Launch your assigned Task Force reconnaissance aircraft to hold contact on the breakout axis, then close the Soviet group before it reaches the eastern exit.
+	<LineBreak />3.2 Use long-range fires against the surface formation, then conduct ASW operations against any submarine contact threatening the force or convoy lanes.
+	<LineBreak />3.3 Maintain a blocking position across the strait and prevent damaged enemy units from escaping into open water.
+	<LineBreak />3.4 Reform south of Lombok after the breakout force is destroyed and prepare for convoy defense tasking.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 The enemy force is a reinforced surface group with sufficient weapons to contest the strait.
+	<LineBreak />4.2 One Kilo class submarine is assessed near the northern approach and may attempt to screen the breakout.
+	<LineBreak />4.3 Enemy units will use the channel shoulders and restricted water to reduce the effectiveness of our maneuvering.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 {TaskForceName} is the principal coalition interception force.
+	<LineBreak />5.2 Coalition convoy lanes south and east of the strait are the protected theater objective.
+	<LineBreak />5.3 Follow-on forces will exploit the passage only after the Soviet breakout has been stopped.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 Broken cloud and good visibility should support radar and missile employment, but local channel winds may disrupt station keeping.
+	<LineBreak />6.2 The enemy is likely to press east at maximum speed rather than turn and fight a prolonged action.
+	<LineBreak />6.3 Do not allow the surface engagement to obscure the submarine threat. A successful torpedo attack could open the route even if the surface group is delayed.
+  </TextBlock>
+</Grid>

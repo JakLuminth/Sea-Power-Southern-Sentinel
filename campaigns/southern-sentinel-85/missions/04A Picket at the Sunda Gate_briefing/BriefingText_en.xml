@@ -1,0 +1,61 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="JOINT MARITIME HQ" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+	<TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDING OFFICER, {TaskForceFlagshipName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="EASTERN COMMAND" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="SUNDA GATE PICKET" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="10 JUL 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	{TaskForceFlagshipName} has been detached from the main force to hold the Sunda approaches while coalition shipping clears south. A Soviet-led raider group is moving through the strait, and a Kilo class submarine is assessed in the area. The passage must remain open long enough for the traffic to escape.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Destroy the enemy raider group.
+	<LineBreak />2.2 Destroy any enemy submarine encountered.
+	<LineBreak />2.3 {TaskForceFlagshipName} must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Hold the marked Sunda Strait station and maintain awareness of both the raider axis and the shipping route.
+	<LineBreak />3.2 Engage the enemy surface group before it can close the withdrawing coalition traffic.
+	<LineBreak />3.3 Investigate and prosecute the submarine contact at datum A01 if encountered and if the tactical situation permits.
+	<LineBreak />3.4 Withdraw through the marked exit after the raiders are neutralized. Do not remain on station after the passage is clear.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 The raider group includes surface combatants and an attached auxiliary operating in or near the strait.
+	<LineBreak />4.2 A Kilo class submarine may approach from the north and use the narrows for concealment.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 {TaskForceFlagshipName} is the only detached escort assigned to the picket mission.
+	<LineBreak />5.2 Coalition shipping is clearing south and cannot provide meaningful tactical support.
+	<LineBreak />5.3 The main force will rejoin the detached unit after the passage has been secured.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 Night conditions favor radar action but coastal haze and current shear may complicate maneuvering.
+	<LineBreak />6.2 The enemy may attempt to bypass the picket rather than accept a close engagement. Maintain coverage of the exit.
+	<LineBreak />6.3 Preserve the ship after achieving the surface objective. A surviving escort is more valuable than an extended pursuit.
+  </TextBlock>
+</Grid>

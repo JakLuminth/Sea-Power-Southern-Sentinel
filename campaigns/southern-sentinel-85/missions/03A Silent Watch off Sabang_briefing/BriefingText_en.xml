@@ -1,0 +1,60 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMSUBIO" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+	<TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDING OFFICER, {TaskForceFlagshipName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="INDIAN OCEAN COMMAND" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="SILENT WATCH OFF SABANG" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="05 JUL 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	A Soviet support ship is anchored west of Sabang to refuel and rearm units screening the Sunda approaches. The vessel is operating under a local patrol screen and is vulnerable while stopped, but the area will close rapidly once an attack is detected.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Destroy the Soviet support ship.
+	<LineBreak />2.2 {TaskForceFlagshipName} must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Infiltrate the marked Sabang approaches submerged and maintain emissions control until the target is identified.
+	<LineBreak />3.2 Conduct a deliberate torpedo attack against the support ship when a high-confidence solution is available.
+	<LineBreak />3.3 After weapons release, break contact immediately and proceed to the marked escape area to the southwest.
+	<LineBreak />3.4 Do not remain in the anchorage to assess damage. Survival of the boat is essential to the operation.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 The support ship is expected to be under escort by patrol craft operating around the anchorage.
+	<LineBreak />4.2 Local surface forces may converge from Sabang or the Sunda approaches after the attack.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 {TaskForceFlagshipName} is operating independently without a supporting surface screen.
+	<LineBreak />5.2 Coalition forces will not enter the target area during the strike window.
+	<LineBreak />5.3 The escape area is the planned recovery point for the operation.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 Light winds, moderate haze, and scattered showers favor a submerged approach but may complicate post-strike navigation.
+	<LineBreak />6.2 Soviet patrols are expected to react aggressively once the support ship is hit.
+	<LineBreak />6.3 The target is valuable for the wider campaign, but no second attack attempt is authorized if the first approach fails.
+  </TextBlock>
+</Grid>

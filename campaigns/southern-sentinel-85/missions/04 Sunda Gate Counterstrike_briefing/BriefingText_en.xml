@@ -1,0 +1,61 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="JOINT MARITIME HQ" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+  <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDING OFFICER, {TaskForceName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="EASTERN COMMAND" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="SUNDA GATE COUNTERSTRIKE" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="08 JUL 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	Enemy light and medium forces have established a screening line across the Sunda exit. The screen is intended to deny coalition movement into the archipelago and preserve the enemy's freedom to operate around Sumatra and Java. The strait is narrow, and the enemy can use coastal cover to delay our approach.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Destroy the enemy screen line.
+	<LineBreak />2.2 {TaskForceFlagshipName} must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Advance on the marked Sunda Strait axis and fix the enemy screen before entering the narrows.
+	<LineBreak />3.2 Use stand-off weapons against missile-armed escorts and fast patrol craft whenever possible.
+	<LineBreak />3.3 Break the screen in sufficient depth to deny a second engagement against follow-on coalition forces.
+	<LineBreak />3.4 Maintain formation integrity and clear the strait only after the enemy line has been neutralized.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 Soviet-led light and medium surface combatants are screening the exit.
+	<LineBreak />4.2 Fast patrol craft may operate close to the Java coast and attempt to attack from restricted waters.
+	<LineBreak />4.3 Coastal geography may mask contacts until they are within weapons range.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 {TaskForceName} is assigned to reopen the Sunda gateway for coalition operations.
+	<LineBreak />5.2 Follow-on shipping and surface forces are awaiting a safe passage through the strait.
+	<LineBreak />5.3 No force can exploit the eastern approach until the screen line is broken.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 Morning haze and coastal rain may reduce visual ranges while radar contacts remain compressed by the terrain.
+	<LineBreak />6.2 Strong currents in the narrows will complicate turns and station keeping during the engagement.
+	<LineBreak />6.3 Expect the enemy to trade space for time. Destroy the screen decisively, then withdraw before coastal defenses can mass.
+  </TextBlock>
+</Grid>

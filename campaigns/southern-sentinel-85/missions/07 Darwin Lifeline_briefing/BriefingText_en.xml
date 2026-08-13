@@ -1,0 +1,62 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="JOINT MARITIME HQ" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+  <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDING OFFICER, {TaskForceName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="DARWIN DEFENSE COMMAND" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATION DARWIN LIFELINE" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="18 JUL 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	Reinforcement shipping and fuel carriers are approaching Darwin while Soviet forces make a final eastern thrust against the coalition position in northern Australia. The convoy route is exposed in the Timor Sea and will be predictable to hostile reconnaissance and submarine patrols.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Defend the Darwin convoy.
+	<LineBreak />2.2 Destroy the enemy main thrust group.
+	<LineBreak />2.3 {TaskForceFlagshipName} must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Establish a layered screen around the reinforcement convoy and remain between the shipping and the enemy approach axis.
+	<LineBreak />3.2 Detect and engage the main thrust group before it can reach the convoy safe area.
+	<LineBreak />3.3 Keep your Task Force reconnaissance aircraft on the main approach axis and coordinate with surface surveillance, giving priority to contacts that threaten the fuel carriers.
+	<LineBreak />3.4 Escort the convoy into the marked Darwin exit corridor and retain the flagship until the convoy is safe.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 A Soviet surface force is expected to lead the final eastern thrust.
+	<LineBreak />4.2 Long-range air reconnaissance and submarine interference are likely along the convoy route.
+	<LineBreak />4.3 The enemy may attempt to bypass the escort and attack the slower fuel carriers directly.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 {TaskForceName} is the principal convoy defense and surface combat force.
+	<LineBreak />5.2 Coalition reinforcement shipping and fuel carriers are the protected force.
+	<LineBreak />5.3 Darwin provides the destination, air support, and recovery area once the convoy enters protected waters.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 Dry-season visibility favors detection but also gives hostile reconnaissance a clear view of the convoy route.
+	<LineBreak />6.2 Enemy commanders are expected to accept losses if they can break the convoy screen before reaching Darwin.
+	<LineBreak />6.3 Convoy survival is the primary measure of success. Do not pursue a damaged raider outside the screen if doing so exposes the shipping.
+  </TextBlock>
+</Grid>

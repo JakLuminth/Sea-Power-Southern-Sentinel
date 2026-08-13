@@ -1,0 +1,60 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="JOINT AIR HQ" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+  <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="LEARMONTH STRIKE PACKAGE" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="WESTERN AIR COMMAND" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="HAMMER FROM LEARMONTH" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="15 JUL 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	Soviet support shipping and staging facilities beyond the eastern choke points are sustaining raider operations against coalition sea lanes. RAAF F-111Cs from Learmonth will conduct a detached long-range strike against the marked convoy before withdrawing to base.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Destroy the target anchorage.
+	<LineBreak />2.2 At least one F-111C must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Depart Learmonth and follow the marked strike axis using the assigned navigation plan.
+	<LineBreak />3.2 Confirm the target convoy before weapons release and concentrate attacks on support shipping and staging facilities.
+	<LineBreak />3.3 Use stand-off weapons where possible and avoid protracted operations over the target area.
+	<LineBreak />3.4 Egress immediately after the strike and recover at Learmonth. Do not wait for a second attack window.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 Soviet auxiliaries and support vessels are concentrated at the target anchorage.
+	<LineBreak />4.2 Local air or surface units may respond after the first weapons impact.
+	<LineBreak />4.3 The enemy may have only limited warning, but recovery forces can reach the area if the strike is delayed.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 RAAF F-111C aircraft form the primary strike package.
+	<LineBreak />5.2 Learmonth is the designated recovery base and remains outside the immediate target area.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 Dry-season conditions favor long-range navigation and strike operations, although high cloud or haze may complicate visual target confirmation.
+	<LineBreak />6.2 Destruction of the convoy will disrupt the enemy's ability to sustain operations around Sunda and Lombok.
+	<LineBreak />6.3 Aircraft survival is mandatory. Abort secondary targets if the primary strike is complete and the package is threatened.
+  </TextBlock>
+</Grid>

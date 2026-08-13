@@ -1,0 +1,60 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="JOINT MARITIME HQ" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+  <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDING OFFICER, {TaskForceName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="INDIAN OCEAN COMMAND" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="FINAL ACTION: LAST LIGHT OFF NICOBAR" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="22 JUL 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	Coalition sea control is within reach, but a final Soviet raider concentration remains in the Nicobar Basin northwest of the Malacca approaches. The group can still scatter into the restored trade routes and reconstitute the threat if it is not destroyed in the current operation.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Destroy the final Soviet raider force.
+	<LineBreak />2.2 {TaskForceFlagshipName} must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Launch your assigned Task Force reconnaissance aircraft to conduct a wide-area sweep of the marked Nicobar Basin and establish the enemy's course before closing the force.
+	<LineBreak />3.2 Use reconnaissance to prevent the raiders from breaking south toward the Malacca approaches.
+	<LineBreak />3.3 Concentrate fires against the main force and pursue separated units only when the flagship and formation remain secure.
+	<LineBreak />3.4 Confirm destruction of the raider concentration, then reform on the coalition sweep axis and report completion.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 The final Soviet force is a concentrated surface raider group with supporting aircraft available in the operating area.
+	<LineBreak />4.2 The enemy may attempt to divide the force, use reconnaissance to identify our approach, and withdraw toward the Malacca routes.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 {TaskForceName} is the principal coalition force assigned to the final sweep.
+	<LineBreak />5.2 Coalition sea lanes are reopening behind the task force and must not be exposed to a surviving raider.
+	<LineBreak />5.3 Surviving coalition units are available for the culminating action; preserve the flagship for the final engagement.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 Open-ocean conditions favor long-range radar and missile combat, with only occasional haze expected to limit visual identification.
+	<LineBreak />6.2 The enemy has limited refuge once engaged but may attempt a high-speed breakout before the force can be surrounded.
+	<LineBreak />6.3 This is the decisive surface action of the campaign. Destroy the raider force without trading away the command ship.
+  </TextBlock>
+</Grid>

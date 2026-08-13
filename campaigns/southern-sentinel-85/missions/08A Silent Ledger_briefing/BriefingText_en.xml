@@ -1,0 +1,61 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMSUBIO" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+	<TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDING OFFICER, {TaskForceFlagshipName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="INDIAN OCEAN COMMAND" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="SILENT LEDGER" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="09 JUL 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	Signals intelligence indicates Soviet replenishment traffic is moving west of Sumatra to support raider operations around Sunda and Lombok. The patrol box contains a probable support group moving along a marked route, with regional merchant traffic providing possible cover for the movement.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Destroy the Soviet replenishment ship.
+	<LineBreak />2.2 {TaskForceFlagshipName} must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Infiltrate the patrol box west of Sumatra and maintain covert surveillance of the probable replenishment route.
+	<LineBreak />3.2 Classify the support group before attacking. Avoid engagement with neutral merchant traffic.
+	<LineBreak />3.3 Destroy the replenishment ship when a favorable firing solution is available, then break contact immediately.
+	<LineBreak />3.4 Proceed to the marked escape area to the southwest and preserve the boat for follow-on operations.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 The target is part of a Soviet support group moving along the replenishment route.
+	<LineBreak />4.2 Escort or patrol vessels may be nearby, and the enemy will begin a search once the target is attacked.
+	<LineBreak />4.3 Merchant traffic may obscure the contact picture but must not be engaged.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 {TaskForceFlagshipName} is operating independently in the patrol box.
+	<LineBreak />5.2 No friendly surface force is assigned to support the attack or cover the withdrawal.
+	<LineBreak />5.3 The escape area is the planned end state and must be reached after the strike.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 Equatorial haze, broken cloud, and rain showers favor a submerged approach but may make surface radar classification unreliable.
+	<LineBreak />6.2 Removing the replenishment ship will impose immediate endurance constraints on Soviet eastern operations.
+	<LineBreak />6.3 This is a single-pass operation. Once the target is destroyed, remain covert and withdraw rather than search for additional contacts.
+  </TextBlock>
+</Grid>

@@ -1,0 +1,62 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Grid.RowDefinitions>
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+	<RowDefinition Height="10" />
+	<RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+	<ColumnDefinition Width="Auto" />
+	<ColumnDefinition Width="10" />
+	<ColumnDefinition Width="*" />
+	<ColumnDefinition Width="Auto" />
+  </Grid.ColumnDefinitions>
+  <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="From:" />
+  <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="JOINT MARITIME HQ" />
+  <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="To:" />
+  <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDING OFFICER, {TaskForceName}" />
+  <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Info:" />
+  <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="DIEGO GARCIA / CONVOY CONTROL" />
+  <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="Subj:" />
+  <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATION EIGHT DEGREE ESCORT" />
+  <TextBlock Grid.Row="7" Grid.Column="3" FontSize="{StaticResource Font.Size.Header}" Text="30 JUN 1985" />
+  <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	1. (S) SITUATION:
+	<LineBreak />
+	Wartime routing has compressed coalition merchant traffic into the Eight Degree Channel. A Soviet surface interception group is moving to sever the route, with submarine patrols assessed in the approaches. The convoy has limited freedom to maneuver and must clear the channel before the enemy can close.
+	<LineBreak /><LineBreak />
+	2. (S) MISSION:
+	<LineBreak />2.1 Escort both merchant ships through the channel.
+	<LineBreak />2.2 Destroy the Soviet interception group.
+	<LineBreak />2.3 {TaskForceFlagshipName} must survive.
+	<LineBreak /><LineBreak />
+	3. (S) EXECUTION:
+	<LineBreak />3.1 Establish a close screen around the convoy and maintain station between the merchants and the expected threat axis.
+	<LineBreak />3.2 Use your assigned Task Force reconnaissance aircraft, helicopters, and shipboard sensors to search ahead of the convoy and prosecute submarine contacts before they can attack.
+	<LineBreak />3.3 Engage the Soviet interception group before it reaches effective weapons range of the merchants.
+	<LineBreak />3.4 Keep at least one escort with each merchant until both ships have entered the marked eastern exit area.
+	<LineBreak /><LineBreak />
+	4. (S) ENEMY SITUATION:
+	<LineBreak />4.1 A Soviet surface group is expected to approach from the eastern side of the channel.
+	<LineBreak />4.2 A Kilo class submarine may be operating west of the convoy and could use the traffic as concealment.
+	<LineBreak />4.3 An Il-38 patrol aircraft may provide reconnaissance and contact updates.
+	<LineBreak /><LineBreak />
+	5. (S) FRIENDLY SITUATION:
+	<LineBreak />5.1 {TaskForceName} is the convoy escort and principal combat force.
+	<LineBreak />5.2 Two merchant ships form the protected convoy and must reach the eastern exit intact.
+	<LineBreak />5.3 Coalition routing control will maintain the channel schedule but cannot divert the convoy once the transit begins.
+	<LineBreak /><LineBreak />
+	6. (S) INTEL ASSESSMENT:
+	<LineBreak />6.1 Scattered squalls and haze may reduce visual detection but will not prevent radar or helicopter ASW operations.
+	<LineBreak />6.2 The enemy is likely to attack when the convoy is committed to the narrowest portion of the channel.
+	<LineBreak />6.3 Convoy survival takes precedence over pursuit. Break off enemy engagements as necessary to remain with the merchants.
+  </TextBlock>
+</Grid>
