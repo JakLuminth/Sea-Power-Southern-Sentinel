@@ -1,4 +1,4 @@
-﻿# Copilot Instructions
+# Copilot Instructions
 
 ## Project Guidelines
 - Use `docs/sea-power-task-force-mode-guide.md` as the preferred repo-local reference summary for Task Force Mode authoring patterns derived from the referenced Sea Power guide.
@@ -36,6 +36,6 @@
 - For Sea Power mission authoring, treat vessel movement as waypoint-driven: every vessel that should move must have explicit Waypoints; do not attribute movement or course changes to automatic task-force AI without runtime evidence.
 
 ## Task Force Mode Guidelines
-- Keep campaign-wide and per-mission Task Force Mode rulesΓÇöincluding economy, generation type, flags, threat profiles, rewards, and availabilityΓÇöin `campaign.ini`.
+- Keep campaign-wide and per-mission Task Force Mode rules—including economy, generation type, flags, threat profiles, rewards, and availability—in `campaign.ini`.
 - Use mission `.ini` files for authored placement and unit-slot behavior. In generated missions, use `Taskforce1Vessel1` as the anchor section and set `TaskForceModeAnchor=True` only there; use replacement slots, Air Tasking slots, and `JoinTaskForce=True` only when needed and follow the detailed repo-local guide for field restrictions.
 - For Sea Power Task Force Mode, `TaskForceModeThreatProfile*` values are informational mission-resistance indicators only; they do not generate enemy threats at runtime. Actual enemy aircraft and units must be authored explicitly in the mission INI.
