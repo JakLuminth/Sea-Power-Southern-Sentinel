@@ -3,7 +3,7 @@ name: Sync shared Sea Power data
 on:
   workflow_dispatch:
   schedule:
-	- cron: "17 3 * * 1"
+  - cron: "17 3 * * 1"
 
 permissions:
   contents: write
@@ -14,38 +14,38 @@ env:
 
 jobs:
   sync:
-	runs-on: ubuntu-latest
-	steps:
-	  - name: Check out project
-		uses: actions/checkout@v4
+  runs-on: ubuntu-latest
+  steps:
+    - name: Check out project
+    uses: actions/checkout@v4
 
-	  - name: Check out shared data
-		uses: actions/checkout@v4
-		with:
-		  repository: ${{ env.SHARED_INSTRUCTIONS_REPOSITORY }}
-		  path: .shared-instructions
-		  token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Check out shared data
+    uses: actions/checkout@v4
+    with:
+      repository: ${{ env.SHARED_INSTRUCTIONS_REPOSITORY }}
+      path: .shared-instructions
+      token: ${{ secrets.GITHUB_TOKEN }}
 
-	  - name: Synchronize shared data
-		shell: bash
-		run: |
-		  cp .shared-instructions/copilot-instructions.md .github/copilot-instructions.md
-		  rm -rf docs
-		  cp -R .shared-instructions/docs docs
+    - name: Synchronize shared data
+    shell: bash
+    run: |
+      cp .shared-instructions/copilot-instructions.md .github/copilot-instructions.md
+      rm -rf docs
+      cp -R .shared-instructions/docs docs
 
-	  - name: Create update pull request
-		shell: bash
-		env:
-		  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-		run: |
-		  if git diff --quiet -- .github/copilot-instructions.md docs; then
-			exit 0
-		  fi
+    - name: Create update pull request
+    shell: bash
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    run: |
+      if git diff --quiet -- .github/copilot-instructions.md docs; then
+      exit 0
+      fi
 
-		  git config user.name "github-actions[bot]"
-		  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-		  git checkout -B chore/sync-shared-sea-power-data
-		  git add .github/copilot-instructions.md docs
-		  git commit -m "chore: sync shared Sea Power data"
-		  git push --force-with-lease origin chore/sync-shared-sea-power-data
-		  gh pr create --title "chore: sync shared Sea Power data" --body "Updates the repository Copilot instructions and Sea Power authoring guides from the shared data repository." --base main --head chore/sync-shared-sea-power-data
+      git config user.name "github-actions[bot]"
+      git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      git checkout -B chore/sync-shared-sea-power-data
+      git add .github/copilot-instructions.md docs
+      git commit -m "chore: sync shared Sea Power data"
+      git push --force-with-lease origin chore/sync-shared-sea-power-data
+      gh pr create --title "chore: sync shared Sea Power data" --body "Updates the repository Copilot instructions and Sea Power authoring guides from the shared data repository." --base main --head chore/sync-shared-sea-power-data
