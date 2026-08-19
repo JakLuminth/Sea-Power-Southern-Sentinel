@@ -1,0 +1,48 @@
+name: Sync Copilot instructions
+
+on:
+  workflow_dispatch:
+  schedule:
+	- cron: "17 3 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  SHARED_INSTRUCTIONS_REPOSITORY: ${{ vars.SHARED_INSTRUCTIONS_REPOSITORY }}
+
+jobs:
+  sync:
+	runs-on: ubuntu-latest
+	steps:
+	  - name: Check out project
+		uses: actions/checkout@v4
+
+	  - name: Check out shared instructions
+		uses: actions/checkout@v4
+		with:
+		  repository: ${{ env.SHARED_INSTRUCTIONS_REPOSITORY }}
+		  path: .shared-instructions
+		  token: ${{ secrets.GITHUB_TOKEN }}
+
+	  - name: Synchronize instructions
+		shell: bash
+		run: cp .shared-instructions/copilot-instructions.md .github/copilot-instructions.md
+
+	  - name: Create update pull request
+		shell: bash
+		env:
+		  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+		run: |
+		  if git diff --quiet -- .github/copilot-instructions.md; then
+			exit 0
+		  fi
+
+		  git config user.name "github-actions[bot]"
+		  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+		  git checkout -B chore/sync-copilot-instructions
+		  git add .github/copilot-instructions.md
+		  git commit -m "chore: sync Copilot instructions"
+		  git push --force-with-lease origin chore/sync-copilot-instructions
+		  gh pr create --title "chore: sync Copilot instructions" --body "Updates the repository Copilot instructions from the shared instructions repository." --base main --head chore/sync-copilot-instructions
