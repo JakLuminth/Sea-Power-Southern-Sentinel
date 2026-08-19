@@ -19,6 +19,7 @@
 - Use `StreamingAssets/original/campaigns/pacific-strike-task-force/` as the complete stock Task Force Mode campaign reference, including `campaign.ini`, roster, commander settings, and mission files.
 - Treat `StreamingAssets/original` as read-only stock game data; do not modify files there. Keep custom content under a direct-child mod folder below `StreamingAssets`, as described in the next rule.
 - For packaged custom mods, use a mod folder directly under `StreamingAssets/<Your Mod Name>/` and enable it in the mod manager. Keep `StreamingAssets/user/missions` distinct as the default editor/user-mission location.
+- In mod development repositories, keep Workshop/runtime content exclusively under `mod/` and point the direct-child `StreamingAssets/<Your Mod Name>/` symlink at that directory. Keep `.git`, `.github`, `docs`, and other development-only content outside `mod/` so folder-based Workshop uploads contain only deployable files.
 - For undocumented engine behavior, inspect the read-only compiled assemblies under `Managed/`, especially `Managed/Seapower-Scripts.dll` for mission, campaign, Task Force Mode, and briefing logic and `Managed/Noesis.NoesisGUI.dll` for XAML briefing UI behavior. Use assemblies from the current game build, never modify them, and verify inferred behavior against runtime logs or in-game testing.
 
 ## Authoring Rules
